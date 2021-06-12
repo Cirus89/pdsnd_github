@@ -141,9 +141,6 @@ def time_stats(df):
     month_count, day_count, hour_count, = pd.Series(dtype=object), pd.Series(dtype=object), pd.Series(dtype=object)
     # filter DataFrame based on user inputs
 
-
-
-
     print('The most frequent travel times')
     # display the most common month
     # check if the DataFrame has been filtered by month
