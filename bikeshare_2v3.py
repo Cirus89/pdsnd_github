@@ -62,9 +62,10 @@ def get_filters():
             print(f'\nThe value entered is not in range.\nPlease enter a number from 0 to 6')
         else:
             break
+            
     # get user input for day of week (all, monday, tuesday, ... sunday)
     day = input('\nSelect week DAY/s: ' + ', '.join(week_day) + '\n').title()
-    # Check that value entered is valid
+    # check that value entered is valid
     while day not in week_day:
         day = input('Reselect a day from options: ' + ', '.join(week_day) + '\n').title()
     else:
