@@ -281,6 +281,7 @@ def station_stats(df):
 
 
 def main():
+    # call function to greet user
     user_name = greet_user()
     while True:
         city, month, day = get_filters()
