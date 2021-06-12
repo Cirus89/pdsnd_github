@@ -117,13 +117,13 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    #Load raw data file
+    # Load raw data file
     df = pd.read_csv(CITY_DATA[city.casefold()])
-    #Convert the 'Start Time' to DateTime and extract month and day to new columns
+    # Convert the 'Start Time' to DateTime and extract month and day to new columns
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['Month'] = df['Start Time'].dt.month_name()
     df['Day'] = df['Start Time'].dt.day_name()
-    #Use the given month and day input to filter the dataframe
+    # Use the given month and day input to filter the dataframe
     if month.casefold() != 'all':
         df = df[df['Month'] == month]
     if day.casefold() != 'all':
@@ -279,6 +279,7 @@ def station_stats(df):
 
 
 def main():
+    # call function to greet user
     user_name = greet_user()
     while True:
         city, month, day = get_filters()
