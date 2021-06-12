@@ -16,6 +16,7 @@ A simple python script that allows the user to interact with data
 * washington.csv
 * new_york_city.csv
 * chicago.csv
+* README.md
 
 ### Credits
 Resources frequently consulted:
