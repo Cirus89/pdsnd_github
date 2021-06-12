@@ -205,8 +205,8 @@ def trip_duration_stats(df):
         df_gender['min'] = pd.to_timedelta(df_gender['min_s'],unit='s').astype(str)
         df_gender['mean'] = pd.to_timedelta(df_gender['mean_s'],unit='s').astype(str)
         df_gender['max'] = pd.to_timedelta(df_gender['max_s'],unit='s').astype(str)
-        #format the DataFrame for display and remove ns from mean
-        # simplify code by using i for loop to iterate throug DataFrame!
+        # format the DataFrame for display and remove ns from mean
+        # code can be simplified by using for loop to iterate throug DataFrame
         df_gender.at['Female','mean'] = df_gender.at['Female','mean'].split('.')[0]
         df_gender.at['Male','mean'] = df_gender.at['Male','mean'].split('.')[0]
         df_gender = df_gender.drop(['min_s', 'mean_s','max_s'], axis = 1).T
