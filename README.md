@@ -1,17 +1,26 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+:octocat:
 
 ### Date created
-Include the date you created this project and README file.
+project created 2021-05-30
+
+README file created 2021-06-12
 
 ### Project Title
-Replace the Project Title
+**Bike share data**
 
 ### Description
-Describe what your project is about and what it does
+A simple python script that allows the user to interact with data
 
 ### Files used
-Include the files used
+* bikeshare_2v3.py
+* washington.csv
+* new_york_city.csv
+* chicago.csv
+* README.md
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Resources frequently consulted:
+https://www.w3schools.com/python/
+https://www.geeksforgeeks.org/
+https://pandas.pydata.org/
+https://realpython.com/
